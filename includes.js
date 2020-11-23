@@ -4,6 +4,12 @@ function includes(arr, item) {
     //      if arr[i] is equal to item, return true
 
     // no match was found, return false
+   for (let i = 0; i < arr.length; i++) {
+       if (arr[i] === item) {
+           return true
+       }
+   }
+    return false
 }
 
 const items = [
